@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Dashboard from './Pages/Dashboard';
 import Hospitals from './Pages/Hospitals';
+import FlexBox from './Pages/FlexBox';
 
 
 const Stack = createNativeStackNavigator();
@@ -14,6 +15,7 @@ export default function App() {
    return (
     <NavigationContainer>
     <Stack.Navigator>
+      <Stack.Screen name="FlexBox" component={FlexBox} />
       <Stack.Screen name="Dashboard" component={Dashboard} />
       <Stack.Screen name="Hospitals" component={Hospitals} />
     </Stack.Navigator>
